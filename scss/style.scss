@@ -1,0 +1,104 @@
+
+$shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+$green1: #b2ff59;
+$green2: #76ff03;
+$green3: #64dd17;
+
+
+body {
+	box-sizing: border-box;
+	background: #e2e1e0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrap {
+	position: relative;
+	width: 300px;
+	height: 600px;
+	background-color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: $shadow1; 
+	padding: 30px;	
+
+	.box-1, .box-2, .box-3 {
+		height: 100x;
+		width: 100px;
+		line-height: 100px;
+		text-align: center;		
+		box-shadow: $shadow1;
+
+		&:hover {
+			box-shadow: $shadow2;
+		};	
+	}
+
+	.box-1 {
+		position: absolute;
+		background-color: $green1;
+		top: 50%;
+		left: 20px;
+		z-index: 1;
+	}
+
+	.box-2 {
+		position: absolute;
+		background-color: $green2;
+		top: 60%;
+		left: 40px;
+		z-index: 1;
+	}	
+
+	.box-3 {
+		position: absolute;
+		background-color: $green3;
+		top: 70%;
+		left: 60px;
+		z-index: 1;
+	}
+
+	.box-4 {
+		position: absolute;
+		top: 240px;
+		height: 50px;				
+		width: 80%;
+		line-height: 50px;
+		text-align: center;
+		margin: 0px auto 0px auto;
+		background-color: #fff;
+		box-shadow: $shadow1;
+
+		&:hover {
+			box-shadow: $shadow2;
+		};
+	}
+
+	.circle-button {
+		position: absolute;
+		top: 300px;
+		left: 250px;
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		border-radius: 50%;
+		background-color: #ff9800;
+		color: #fff;
+		box-shadow: $shadow1;
+		align-items: center;
+
+		svg {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+		
+	}		
+}
+

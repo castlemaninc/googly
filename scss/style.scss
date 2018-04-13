@@ -98,6 +98,14 @@ a {
 			width: 100%;
 			text-align: center;
 		}
+
+		&:hover {
+			box-shadow: $shadow2;
+		};
+
+		&:active {
+			box-shadow: $shadow1;
+		};
 		
 	}		
 }
